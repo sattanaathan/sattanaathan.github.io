@@ -22,6 +22,20 @@
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
     </script>
+	<style>
+			.column {
+			float: left;
+			width: 48.00%;
+			padding: 5px;
+		}
+
+		/* Clearfix (clear floats) */
+		.row::after {
+			content: "";
+			clear: both;
+			display: table;
+		}
+	</style>
   </head>
   <body data-spy="scroll" data-target=".sideNav" >
     <div class="navbar navbar-fixed-top navbar-inverse">
@@ -80,17 +94,28 @@
 			<h5>Texas Instruments Innovation Challenge India Design Contest 2015</h5>
             <p>Top 86 semi-finalist from 1209 teams <a href= "http://e2e.ti.com/group/universityprogram/w/contests/2436.contest-winners.aspx"> Semi-finalist, Texas Instruments Innovation Challenge India Design Contest 2015 </a> among over 1200 participating teams from all over the country competing in various fields and technologies of Electronics</p>
              <div class="row">
-              <div class="span5">
-				<video width="700" height="400" controls>
+              <div class="span9">
+				<em>Entry to Texas Instruments Innovation Challenge India Design Contest 2015</em>
+				<div style="position:relative;height:0;padding-bottom:56.21%"><iframe src="https://www.youtube.com/embed/2GoS7ifl-4o?ecver=2" style="position:absolute;width:100%;height:100%;left:0" width="641" height="360" frameborder="0" allowfullscreen></iframe></div>
+				<br><em>Working Demo</em>
+				<div style="position:relative;height:0;padding-bottom:56.21%"><video style="position:absolute;width:100%;height:100%;left:0" width="641" height="360" frameborder="0" controls>
 					<source src="img/ti idc video.mp4" type="video/mp4">
 					Your browser does not support the video tag.
-				</video>
+				</video></div>
 			  </div>
              </div>
              <br>
 			<h5>Sangam, Pragyan 2014</h5>
 			<p>Sangam 2014 Second Runner-up, Sangam Pragyan - 2014 </a> among over 300 participating teams competing in various fields and technologies</p>
-			
+			 <div class="row">
+              <div class="span9">
+				<em>Working Demo</em>
+				<div style="position:relative;height:0;padding-bottom:56.21%"><video style="position:absolute;width:100%;height:100%;left:0" width="641" height="360" frameborder="0" controls>
+					<source src="img/smartwatch.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+				</video></div>
+			  </div>
+             </div>
            </section>
 
          <hr class="separator" /> 
@@ -146,18 +171,14 @@
 		   <ul>
 			<li><h5>Co-Founder and head volunteer at HumaNITTy</h5></li> <p>HumaNITTy is an umbrella organization of all the social responsibility clubs of NIT-Trichy. We started with 50 volunteers and it has grown to 300+ volunteers with 2 National level awards (FICCI and ASSOCHAM awards for Best Institute with Social Responsibility).</p>
 			<div class="row">
-              <div class="span5"><img src="img/Huma1.jpg" class="img-rounded"/></div>
-              </div>
-			  <div class="row">
-              <div class="span5"><img src="img/Huma2.jpg" class="img-rounded"/></div>
+              <div class="column"><img src="img/Huma1.jpg" style="width:100%" class="img-rounded"/></div>
+              <div class="column"><img src="img/Huma2.jpg" style="width:100%" class="img-rounded"/></div>
             </div>
             <br>
 			<li><h5>Co-Founder-Tutor at CYBER-TRONiX</h5></li> <p>CYBER-TRONiX is a platform which imparts technical knowledge to lesser privileged students through technical workshops. Using this platform we have reached out to over 1400 lesser privileged students.</p>
 			<div class="row">
-              <div class="span5"><img src="img/cyber_KIOT2.jpg" class="img-rounded"/></div>
-              </div>
-			  <div class="row">
-              <div class="span5"><img src="img/cyber_KIOT3.jpg" class="img-rounded"/></div>
+              <div class="column"><img src="img/cyber_KIOT2.jpg" style="width:100%" class="img-rounded"/></div>
+              <div class="column"><img src="img/cyber_KIOT3.jpg" style="width:100%" class="img-rounded"/></div>
             </div>
             <br>
 			<li><h5>Manager at Pragyan</h5></li> <p> Pragyan, the international techno-managerial fest of NIT Trichy ISO 20121:2012 Certified. I organized and managed Brain Wave robotics workshop during Pragyan 2015.</p>
