@@ -56,9 +56,9 @@
              <li>
                 <a href="#SW">Smart Watch</a>
             </li>
-            <li>
+            <!--<li>
                 <a href="#HA">Home Automation</a>
-            </li>
+            </li>-->
             <li>
                 <a href="#FM">Wireless Non-Invasive<br>Flow Meter</a>
             </li>
@@ -248,7 +248,7 @@
 
 		<hr class="separator" />
 		
-		<section id="HA">
+		<!--<section id="HA">
 			<h3>HOME AUTOMATION AND POWER MONITOR</h3>
 			<h5>Guide:</h5><i><a href="https://www.nitt.edu/home/academics/departments/eee/people/faculty/aprof/moorthi/" target="_blank"><b>Dr.S.Moorthi</b></a>, Associate Professor, Department of Electrical and Electronics Engineering, NIT Trichy</i>
 			<h5>Goal</h5>
@@ -259,7 +259,7 @@
 			</p>
 		</section>
 		
-		<hr class="separator" />
+		<hr class="separator" />-->
 
 		<section id="FM">
 			<h3>WIRELESS NON INVASIVE FLOW METER</h3>
@@ -283,21 +283,20 @@
 	    <hr class="separator" />
 		
         <section id="PM">
-			<h3>WIRELESS NON INVASIVE FLOW METER</h3>
+			<h3>WIRELESS HOME POWER MONITOR</h3>
 			<h5>Guide:</h5><i><a href="https://www.nitt.edu/home/academics/departments/eee/people/faculty/aprof/saravana/" target="_blank"><b>Dr.G.Saravana Ilango</b></a>, Associate Professor, Department of Electrical and Electronics Engineering, NIT Trichy</i>
 			<h5>Goal</h5>
-				<p>To design, develop and construct a prototype of real-life working product - a wireless non invasive flow meter.</p>
+				<p>To design, develop and construct a prototype of real-life working product - a wireless home power consumption monitor.</p>
 			<h5>Abstract</h5>
 			<p>
-				Developed a wireless non invasive flow meter  using ultrasonic sensor us-020, MSP430 microcontrollers, HC-05 bluetooth module and android application developed by myself, capable of measuring the flow rate of fluid inside a pipe.
+				Developed a wireless home power consumption monitor using non-invasive current sensor, potential divider voltage measurement sensor, MSP430 microcontrollers, HC-05 bluetooth module and android application developed by myself, capable of measuring the power consumption in a home.
 			</p>
 			<h5>Implementation</h5>
 			<ul>
-			  <li>Developed an android application which displays the flow rate. Also the configuration parameters such as the material index of the pipe and fluid, thickness of the pipe and distance between the ultrasonic transmitter and receiver</li>
-			  <li>The configuration parameters are passed from the android app to MSP430 via bluetooth using HC-05.</li>
-			  <li>Necessary calculations are done in MSP430 to calibrate the setup and start measuring the flow rate.</li>
-			  <li>The ultrasonic wave is sent through the pipe and received by the receiver. The Time delay between transmission and reception is used to calculate the flow rate.</li>
-			  <li>Calibrated embedded system will send the flow rate to android app via bluetooth using HC-05</li>
+			  <li>Developed an android application which displays the real-time Voltage, overall load (Current) and Power.</li>
+			  <li>The real-time power is used to plot a graph between Power and Time.</li>
+			  <li>This data can be used to identify the spikes and surges vs the time.</li>
+			  <li>This data can also be used to regulate the power consumption.</li>
 			</ul>
 		</section>
 		
