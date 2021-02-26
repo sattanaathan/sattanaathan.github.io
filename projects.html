@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Sattanaathan Thayumanan</title>
+	<!-- Bootstrap -->
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="bootstrap/css/other.css" rel="stylesheet">
+	<!-- Enable fluid response -->
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+	<!-- <link href="assets/css/bootstrap-responsive.css" rel="stylesheet"> -->
+
+	<script src="bootstrap/js/jquery-latest.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<!-- Analytics Code -->
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-10620514-6']);
+		_gaq.push(['_trackPageview']);
+
+		(function () {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+</head>
+
+<body data-spy="scroll" data-target=".sideNav">
+	<div class="navbar navbar-fixed-top navbar-inverse">
+		<div class="navbar-inner">
+			<div class="container">
+				<a class="brand" href="index.html">Sattanaathan Thayumanan</a>
+				<ul class="nav" id="mainTabs">
+					<li><a href="index.html"><i class="icon-home icon-white"></i> Home</a></li>
+					<li class="active"><a href="projects.html"><i class="icon-cog icon-white"></i> Projects</a></li>
+					<li><a href="resume.html"><i class="icon-list-alt icon-white"></i> Resume</a></li>
+					<li><a href="courses.html"><i class="icon-book icon-white"></i> Academics</a></li>
+					<li><a href="contact.html"><i class="icon-envelope icon-white"></i> Contact</a></li>
+
+					<!-- <li><a href="#">Link</a></li> -->
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="span3 sideNav">
+				<ul id="resumeSideNavBar" class="nav nav-pills nav-stacked affix">
+					<li class="nav-header">Academic Projects</li>
+					<li>
+						<a href="#REDS">R-E-D-S</a>
+					</li>
+					<li class="nav-header">Contests Entry Projects</li>
+					<li>
+						<a href="#TI">Wheelie</a>
+					</li>
+					<li>
+						<a href="#SW">Smart Watch</a>
+					</li>
+					<!--<li>
+                <a href="#HA">Home Automation</a>
+            </li>-->
+					<li class="nav-header">Projects Part of Courses</li>
+					<li>
+						<a href="#FM">Wireless Non-Invasive<br>Flow Meter</a>
+					</li>
+					<li>
+						<a href="#PM">Wireless Home Power<br>Monitor</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="span9">
+				<div class="page-header">
+					<h1>Projects<small> Academic, Contests and Courses</small></h1>
+				</div>
+
+				<section id="REDS">
+					<h3>Real-time Embedded system for Differently abled and Senior citizens (R-E-D-S)- B.Tech Final
+						Project</h3>
+					<h5>Guide:</h5><i><a
+							href="https://www.nitt.edu/home/academics/departments/eee/people/faculty/aprof/moorthi/"
+							target="_blank"><b>Dr.S.Moorthi</b></a>, Associate Professor, Department of Electrical and
+						Electronics Engineering, NIT Trichy</i>
+					<h5>Goal</h5>
+					<p>To design, develop and construct a prototype of real-life working product - a portable electric
+						vehicle with a real-time embedded system and Android application UI for differently-abled and
+						senior citizens, R-E-D-S</p>
+					<h5>Motivation</h5>
+					<ul>
+						<li>Inspired by Segway, I wanted to make a potable 1 seater transport with more stability and
+							safety for differently abled and senior citizens</li>
+					</ul>
+
+					<div class="container">
+						<div class="page-header">
+							<h3>GENERAL BLOCK DIAGRAM OF THE SYSTEM (R-E-D-S)</h3>
+							<p>
+								<div class="span9"><img src="img/redsGBD.jpg" class="img-rounded"> </div> <br>
+							</p>
+						</div>
+					</div>
+
+					<div class="container">
+						<div class="page-header">
+							<br>
+							<h3>ANIMATED MODEL</h3>
+							<p>
+								<div class="span9"><img src="img/redsAM.jpg" class="img-rounded"> </div><br>
+							</p>
+						</div>
+					</div>
+
+					<div class="container">
+						<div class="page-header">
+							<br>
+							<h3>USER INTERFACE</h3>
+							<ul>
+								<li>Graphical design is the key feature </li>
+								<li>An android mobile is used as the interfacing device which controls speed, direction
+									and brakes.</li>
+								<li>This application is also used as the display for monitoring different important
+									parameters like voltage, current, speed, etc.</li>
+							</ul>
+							<p>
+								<div class="span9"><img src="img/redsUI.jpg" class="img-rounded"> </div>
+							</p>
+						</div>
+					</div>
+
+					<div class="container">
+						<div class="page-header">
+							<br>
+							<h3>BLUETOOTH COMMUNICATION</h3>
+							<ul>
+								<li>HC-05 module, Bluetooth SPP (Serial Port Protocol) is used for communication between
+									UI and Embedded System.</li>
+								<li>MSP430 G2553 micro-controller is used to operate HC-05 and interface it with
+									embedded system.</li>
+							</ul>
+							<p>
+								<div class="span9"><img src="img/redsBC.jpg" class="img-rounded"> </div>
+							</p>
+						</div>
+					</div>
+
+					<div class="container">
+						<div class="page-header">
+							<br>
+							<h3>REAR DRIVE CONTROLS</h3>
+							<ul>
+								<li>Four 15 A relays are used to control the speed of the motor.</li>
+								<li>The triggering of the relays are controlled using MSP430 G2553 and IGBTs</li>
+							</ul>
+							<p>
+								<br>
+								<div class="span9"><img src="img/redsMC.jpg" class="img-rounded"> </div> <br>
+								<br>
+								<div class="span9"><img src="img/redsDS.jpg" class="img-rounded"> </div> <br>
+							</p>
+						</div>
+					</div>
+
+					<div class="container">
+						<div class="page-header">
+							<br>
+							<h3>STEERING CONTROLS</h3>
+							<ul>
+								<li>Two 15 A relays are used to control the direction of rotation of motor.</li>
+								<li>The triggering of the relays are controlled using MSP430 G2553 and IGBTs.</li>
+							</ul>
+							<p>
+								<br>
+								<div class="span9"><img src="img/redsSC.jpg" class="img-rounded"> </div> <br>
+							</p>
+						</div>
+					</div>
+
+					<div class="container">
+						<div class="page-header">
+							<br>
+							<h3>SENSORS</h3>
+							<ul>
+								<li>Non-Invasive Hall sensor is used to measure the armature current.
+								<li>
+								<li>Voltage divider is used for measuring Terminal Voltage.</li>
+								<li>Temperature sensor LM35 is used to measure system temperature.</li>
+								<li>Speed is calculated using the load characteristics of PMDC motor used.</li>
+							</ul>
+							<p>
+								<br>
+								<div class="span9"><img src="img/redsSEN.jpg" class="img-rounded"> </div> <br>
+							</p>
+						</div>
+					</div>
+
+				</section>
+
+				<hr class="separator" />
+
+				<br>
+				<section id="TI"><br>
+					<h3>ROBOTIC ARM EQUIPPED SOLAR POWERED HYBRID ELECTRIC WHEEL CHAIR</h3>
+					<h5>Guide:</h5><i><a
+							href="https://www.nitt.edu/home/academics/departments/eee/people/faculty/prof/aruldaniel/"
+							target="_blank"><b>Dr.S.Arul Daniel</b></a>, Professor, Department of Electrical and
+						Electronics Engineering, NIT Trichy</i>
+					<h5>Texas Instruments Innovation Challenge India Design Contest 2015</h5>
+					<h5>Abstract</h5>
+					<ul>
+						<li>People confined to wheelchairs typically face a lot of difficulties in in performing basic
+							tasks like locomotion, eating, opening doors and moving objects around.
+							Our wheelchair is intended to enable these people to lead more independent lives. It is
+							equipped with a pair of 6 DOF robotic arms, with a reach of 1.2m and a payload of 700 gms.
+							Existing electric wheelchairs can only operate for a few hours on battery power. Solar
+							powered hybrid electric wheelchairs mitigate this problem by using a solar panel to charge
+							the batteries whenever sunlight is available.
+							“Perturb and observe” or other MPPT based algorithms are often used to maximize power
+							output.</li>
+
+						<li>Our project aims to increase the solar power efficiency by combining the existing Perturb
+							and Observe algorithm with a 2 DOF mechanical solar tracking system so that the Pertub and
+							Observe algorithm is always applied at the point of maximum light intensity.</li>
+
+						<li>The motion of the wheelchair is controlled by head tracking done using image processing on a
+							Beaglebone. The motion of the end effector of the robotic arm will be controlled by tracking
+							the user’s eyeballs. The inverse kinematics of the robotic arm will also be handled by the
+							Beaglebone.
+							The arm is designed to perform coordinated tasks such as reading a newspaper, eating using a
+							spoon or pouring water into a tumbler. Our goal is to develop this as a low cost and
+							eco-friendly alternative to existing electric wheelchairs so that more disabled people have
+							access to technology that improves the quality of their lives.</li>
+
+					</ul>
+					<h5>Achievement</h5>
+					<p>Top 86 semi-finalist from 1209 teams <a
+							href="http://e2e.ti.com/group/universityprogram/w/contests/2436.contest-winners.aspx"
+							target="_blank">
+							Semi-finalist, Texas Instruments Innovation Challenge India Design Contest 2015 </a> among
+						over 1200 participating teams from all over the country competing in various fields and
+						technologies of Electronics</p>
+					<div class="row">
+						<div class="span9">
+							<em>Entry to Texas Instruments Innovation Challenge India Design Contest 2015</em>
+							<div style="position:relative;height:0;padding-bottom:56.21%"><iframe
+									src="https://www.youtube.com/embed/2GoS7ifl-4o?ecver=2"
+									style="position:absolute;width:100%;height:100%;left:0" width="641" height="360"
+									frameborder="0" allowfullscreen></iframe></div>
+							<br><em>Working Demo</em>
+							<div style="position:relative;height:0;padding-bottom:56.21%"><video
+									style="position:absolute;width:100%;height:100%;left:0" width="641" height="360"
+									frameborder="0" controls>
+									<source src="img/ti idc video.mp4" type="video/mp4">
+									Your browser does not support the video tag.
+								</video></div>
+						</div>
+					</div>
+
+				</section>
+
+				<hr class="separator" />
+
+				<section id="SW">
+					<h3>SMART WATCH</h3>
+					<h5>Goal</h5>
+					<p>To design, develop and construct a prototype of real-life working product - a multipurpose smart
+						watch which displays messages and missed calls which are received by our mobile phone under $30.
+					</p>
+					<h5>Abstract</h5>
+					<ul>
+						<li>A message is received by our mobile phones or we miss a call. Using an app which is
+							developed by me, we send the number and the message received to the msp430 present on the
+							watch using bluetooth</li>
+						<li>The message received along with the number is displayed on the lcd screen</li>
+						<li>The watch constantly shows the time by updating the internal timers of the msp430.</li>
+					</ul>
+					<h5>Achievement</h5>
+					<p>Sangam 2014 Second Runner-up, Sangam Pragyan - 2014 </a> among over 300 participating teams
+						competing in various fields and technologies</p>
+					<div class="row">
+						<div class="span9">
+							<em>Entry to Pragyan, <a href="https://www.pragyan.org/14/home/exhibition/" target="_blank">
+									Sangam </a> - A
+								Technical project display contest </em>
+							<video width="700" height="700" frameborder="0" controls>
+								<source src="img/smartwatch.mp4" type="video/mp4">
+								Your browser does not support the video tag.
+							</video>
+							<br>
+							<img src="img/smartwatchFront.jpg" style="width:100%" class="img-rounded">
+							<p> </p>
+							<img src="img/smartwatchInside.jpg" style="width:100%" class="img-rounded">
+						</div>
+					</div>
+
+					<div class="container">
+						<div class="page-header">
+							<br>
+							<h3>GENERAL BLOCK DIAGRAM</h3> </br>
+							<p>
+								<div class="span9"><img src="img/smartwatchGBD.jpg" class="img-rounded"> </div>
+							</p>
+						</div>
+					</div>
+
+				</section>
+
+				<hr class="separator" />
+
+				<!--<section id="HA">
+			<h3>HOME AUTOMATION AND POWER MONITOR</h3>
+			<h5>Guide:</h5><i><a href="https://www.nitt.edu/home/academics/departments/eee/people/faculty/aprof/moorthi/" target="_blank"><b>Dr.S.Moorthi</b></a>, Associate Professor, Department of Electrical and Electronics Engineering, NIT Trichy</i>
+			<h5>Goal</h5>
+				<p>To design, develop and construct a prototype of real-life working product - a Power meter with Home automation system using Papilio one FPGA and MSP430 microcontrollers</p>
+			<h5>Abstract</h5>
+			<p>
+				Developed a centralized monitoring system, capable of monitoring status of home power consumption and also controlling appliances over Wireless Local Area Network using embedded systems.
+			</p>
+		</section>
+		
+		<hr class="separator" />-->
+
+				<section id="FM">
+					<h3>WIRELESS NON INVASIVE FLOW METER</h3>
+					<h5>Guide:</h5><i><a
+							href="https://www.nitt.edu/home/academics/departments/eee/people/faculty/aprof/saravana/"
+							target="_blank"><b>Dr.G.Saravana Ilango</b></a>, Associate Professor, Department of
+						Electrical and Electronics Engineering, NIT Trichy</i>
+					<h5>Goal</h5>
+					<p>To design, develop and construct a prototype of real-life working product - a wireless non
+						invasive flow meter.</p>
+					<h5>Abstract</h5>
+					<p>
+						Developed a wireless non invasive flow meter using ultrasonic sensor us-020, MSP430
+						microcontrollers, HC-05 bluetooth module and android application developed by myself, capable of
+						measuring the flow rate of fluid inside a pipe.
+					</p>
+					<h5>Implementation</h5>
+					<ul>
+						<li>Developed an android application which displays the flow rate. Also the configuration
+							parameters such as the material index of the pipe and fluid, thickness of the pipe and
+							distance between the ultrasonic transmitter and receiver</li>
+						<li>The configuration parameters are passed from the android app to MSP430 via bluetooth using
+							HC-05.</li>
+						<li>Necessary calculations are done in MSP430 to calibrate the setup and start measuring the
+							flow rate.</li>
+						<li>The ultrasonic wave is sent through the pipe and received by the receiver. The Time delay
+							between transmission and reception is used to calculate the flow rate.</li>
+						<li>Calibrated embedded system will send the flow rate to android app via bluetooth using HC-05
+						</li>
+					</ul>
+				</section>
+
+				<hr class="separator" />
+
+				<section id="PM">
+					<h3>WIRELESS HOME POWER MONITOR</h3>
+					<h5>Guide:</h5><i><a
+							href="https://www.nitt.edu/home/academics/departments/eee/people/faculty/aprof/saravana/"
+							target="_blank"><b>Dr.G.Saravana Ilango</b></a>, Associate Professor, Department of
+						Electrical and Electronics Engineering, NIT Trichy</i>
+					<h5>Goal</h5>
+					<p>To design, develop and construct a prototype of real-life working product - a wireless home power
+						consumption monitor.</p>
+					<h5>Abstract</h5>
+					<p>
+						Developed a wireless home power consumption monitor using non-invasive current sensor, potential
+						divider voltage measurement sensor, MSP430 microcontrollers, HC-05 bluetooth module and android
+						application developed by myself, capable of measuring the power consumption in a home.
+					</p>
+					<h5>Implementation</h5>
+					<ul>
+						<li>Developed an android application which displays the real-time Voltage, overall load
+							(Current), power factor and Power.</li>
+						<li>Zero crossing circuit has been used for calculating power factor</li>
+						<li>The real-time power is used to plot a graph between Power and Time, Power factor and Time.
+						</li>
+						<li>This data can be used to identify the spikes and surges vs the time.</li>
+						<li>This data can also be used to regulate the power consumption.</li>
+					</ul>
+				</section>
+
+				<hr class="separator" />
+
+				<h5>Results/Impact:</h5>
+				<p>All of these projects are focused on developing systems which will aid in conserving electrical
+					energy and introduce automation in residencies which will ease the user with an effective control
+					medium.</p>
+
+			</div>
+		</div>
+	</div>
+	<script>
+		(function (i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date(); a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+		ga('create', 'UA-43264580-1', 'sattamaathan.in');
+		ga('send', 'pageview');
+
+	</script>
+</body>
+<!-- // $('img').click(function(){window.open($(this).attr('src'));console.log($(this));});
+  // $('img').hover(function(){$(this).css('cursor','pointer');},function(){$(this).css('cursor','auto');}); -->
+
+</html>
